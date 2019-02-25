@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Clr_ManualVC">
+            <connections>
+                <outlet property="add" destination="qQq-UZ-ZQC" id="ojq-tv-a0o"/>
+                <outlet property="delete" destination="VWC-yP-kjx" id="McT-Jc-rWY"/>
+                <outlet property="imageView" destination="MZ5-2w-SGh" id="K0h-0V-X22"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MZ5-2w-SGh">
+                    <rect key="frame" x="10" y="76" width="355" height="355"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="MZ5-2w-SGh" secondAttribute="height" multiplier="1:1" id="3kW-HK-Z4y"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQq-UZ-ZQC">
+                    <rect key="frame" x="202.5" y="475" width="142.5" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="HoU-ac-s0b"/>
+                    </constraints>
+                    <state key="normal" title="追加"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWC-yP-kjx">
+                    <rect key="frame" x="30" y="475" width="142.5" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="6Hu-tI-8Xc"/>
+                    </constraints>
+                    <state key="normal" title="削除"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MZ5-2w-SGh" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="8I3-3v-pgS"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="qQq-UZ-ZQC" secondAttribute="trailing" constant="30" id="8ul-IG-gRa"/>
+                <constraint firstItem="qQq-UZ-ZQC" firstAttribute="top" secondItem="MZ5-2w-SGh" secondAttribute="bottom" constant="44" id="PQN-LL-Ku7"/>
+                <constraint firstItem="VWC-yP-kjx" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="Pe8-Pz-bmX"/>
+                <constraint firstItem="VWC-yP-kjx" firstAttribute="top" secondItem="MZ5-2w-SGh" secondAttribute="bottom" constant="44" id="Y6d-Hg-xKx"/>
+                <constraint firstItem="MZ5-2w-SGh" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-80" id="ePx-KK-gRo"/>
+                <constraint firstItem="MZ5-2w-SGh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="n4r-Oi-Rwh"/>
+                <constraint firstItem="qQq-UZ-ZQC" firstAttribute="leading" secondItem="VWC-yP-kjx" secondAttribute="trailing" constant="30" id="nGs-tJ-m94"/>
+                <constraint firstItem="VWC-yP-kjx" firstAttribute="width" secondItem="qQq-UZ-ZQC" secondAttribute="width" id="qyL-Vb-xUn"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="MZ5-2w-SGh" secondAttribute="trailing" constant="10" id="yFy-hi-z7j"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

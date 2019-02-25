@@ -1,0 +1,32 @@
+//
+//  PrefixHeader.pch
+//  色の選択
+//
+//  Created by devfalme on 2018/12/10.
+//  Copyright © 2018 devfalme. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "Clr_Client.h"
+#import "UIViewController+Clr_Color.h"
+
+#import <QMUIKit/QMUIKit.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import <Router_t/Router_t.h>
+#import <Masonry/Masonry.h>
+#import <ChameleonFramework/Chameleon.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <LKDBHelper/LKDBHelper.h>
+
+#ifdef DEBUG
+
+#define NSLog(...) NSLog(@"%s%@",__PRETTY_FUNCTION__,[NSString stringWithFormat:__VA_ARGS__])
+
+#else
+
+#define NSLog(...)
+
+#endif
+
+#endif /* PrefixHeader_pch */
